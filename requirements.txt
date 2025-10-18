@@ -1,0 +1,7 @@
+langgraph
+chromadb
+arxiv
+duckduckgo-search
+ddgs
+langchain-core
+PyMuPDF
