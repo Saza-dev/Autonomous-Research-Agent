@@ -2,7 +2,7 @@ import arxiv
 from langchain_core.tools import tool
 
 @tool
-def search_arxiv(query: str, max_results: int = 5):
+def arxivsearch(query: str, max_results: int = 5) -> list:
     """
     Searches arXiv for a given query and returns a list of results
     with title, authors, summary, and PDF URL.
@@ -34,3 +34,4 @@ def search_arxiv(query: str, max_results: int = 5):
         return f"Error: Failed to connect to arXiv API. {str(e)}"
     except Exception as e:
         return f"Error: An unexpected error occurred during arXiv search: {str(e)}"
+    

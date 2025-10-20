@@ -2,7 +2,7 @@ from ddgs import DDGS
 from langchain_core.tools import tool
 
 @tool
-def google_search(keywords: str, num_results: int = 5):
+def googlesearch(keywords: str, num_results: int = 5) -> list:
     """
     Performs a web search using DuckDuckGo and returns a list of results.
     Each result is a dictionary with 'title', 'url', and 'snippet'.
