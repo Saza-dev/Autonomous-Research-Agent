@@ -5,3 +5,4 @@ duckduckgo-search
 ddgs
 langchain-core
 PyMuPDF
+chromadb

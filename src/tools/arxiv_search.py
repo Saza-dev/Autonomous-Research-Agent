@@ -2,7 +2,7 @@ import arxiv
 from langchain_core.tools import tool
 
 @tool
-def arxivsearch(query: str, max_results: int = 5) -> list:
+def arxivsearch(query: str, max_results: int = 2) -> list:
     """
     Searches arXiv for a given query and returns a list of results
     with title, authors, summary, and PDF URL.
